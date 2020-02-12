@@ -31,5 +31,9 @@ class MicropostsController < ApplicationController
     unless @micropost
       redirect_to root_url
     end
+    
+  def favorites
+    @microposts = current_user.favorite_micropost.includes(:user).resent
   end
+ end
 end
