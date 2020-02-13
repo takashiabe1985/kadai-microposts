@@ -13,9 +13,7 @@ Rails.application.routes.draw do
       get :likes
     end
     
-    collection do
-      get :search
-    end
+    
   end  
     
     
